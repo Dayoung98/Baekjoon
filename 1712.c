@@ -4,6 +4,10 @@ int main(){
     int A,B,C;
     int num = 0;
     scanf("%d %d %d",&A,&B,&C);
+    if(B>=C){
+        printf("-1\n");
+        return 0;
+    }
     num = A/(C-B) + 1;
     if(num <= 0){
         printf("-1\n");
@@ -11,7 +15,6 @@ int main(){
     else{
         printf("%d\n",num);
     }
-    return 0;
 }
 /*월드전자는 노트북을 제조하고 판매하는 회사이다. 
 노트북 판매 대수에 상관없이 매년 임대료, 재산세, 보험료, 급여 등 A만원의 고정 비용이 들며, 
